@@ -1,0 +1,141 @@
+----------------------------------------------------------------------------------------------------------------
+* General topics: ----------------------------------------------------------------------------------------------
+* Pure Component
+* Hooks --> https://www.youtube.com/watch?v=LlvBzyy-558
+* Redux
+* Context API
+* React Portal
+* React Helmet || React Helmet Async
+* 
+
+
+* Babel --> Babel is a transplier which converts new feature of Javascript code to browser undestandable code
+Ex: let total = 10;
+	let sum = tatal ?? 100;
+		(To)
+	let sum = total !== null && total !== void 0 ? total : 100;
+
+* Polyfills --> If the browser is not supported any feature of Jabascript (Number.isNaN is not supported in IE11), in this there will be equivalant code with browser understable code.
+Ex: (!Number.isNaN) {
+		Number,isNaN = function isNaN(x) {
+			return x !== x;
+		}
+	}
+
+	Note: core-js is a famous Polyfill library
+
+* 'React.memo' is related to 'component', 'useMemo' is related to 'value', 'useCallback' is related to function. To be precise, useMemo returns a value, useCallback return a function.
+
+* 
+
+----------------------------------------------------------------------------------------------------------------
+* Rounting: ----------------------------------------------------------------------------------------------------
+* All the routing related concepts like
+	- Link
+	- NavLink
+	- Active Link
+	- Navigating Programatically
+	- Nested routing
+	- Index route
+	- Dynamic routes
+	- URL Params
+	- Search/Query Params
+	- Lazy-loading
+	- Authentication and Protected routes
+
+* FMD --> https://www.youtube.com/watch?v=sLpmr5DtTRY&list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG&index=2
+----------------------------------------------------------------------------------------------------------------
+* Lazy-loading: ------------------------------------------------------------------------------------------------
+* Lazy-loading is useful to reduce the initial App loading time and improves App performance.
+
+* FMD --> https://www.youtube.com/watch?v=MJn4W7pR6RU
+----------------------------------------------------------------------------------------------------------------
+* React-hooks: -------------------------------------------------------------------------------------------------
+* It's all about hooks
+
+
+* FMD --> https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A
+----------------------------------------------------------------------------------------------------------------
+* React-Redux: -------------------------------------------------------------------------------------------------
+* It's all about Redux
+
+
+* FMD --> https://www.youtube.com/watch?v=9boMnm5X9ak&list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK
+----------------------------------------------------------------------------------------------------------------
+* React with Typescript: ---------------------------------------------------------------------------------------
+* It's all about React with Typescript
+
+
+* FMD --> https://www.youtube.com/watch?v=Elpu7CIuqjY&list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo
+----------------------------------------------------------------------------------------------------------------
+* HOC: ---------------------------------------------------------------------------------------------------------
+
+* FMD --> https://www.youtube.com/watch?v=B6aNv8nkUSw
+* FMD --> https://www.geeksforgeeks.org/react-js-higher-order-components/
+----------------------------------------------------------------------------------------------------------------
+* Error Boundaries: ---------------------------------------------------------------------------------------------------------
+
+* FMD --> https://www.youtube.com/watch?v=DNYXgtZBRPE
+----------------------------------------------------------------------------------------------------------------
+* Custom Hook: -------------------------------------------------------------------------------------------------
+
+* FMD --> https://www.youtube.com/watch?v=4yp6T-hF5ZY
+https://www.youtube.com/watch?v=6am-yn3ZLEw
+https://www.youtube.com/watch?v=6ThXsUwLWvc
+----------------------------------------------------------------------------------------------------------------
+* React 18: ----------------------------------------------------------------------------------------------------
+* It's all about React 18 features
+	- Concurrency
+	- Automatic batching
+	- Transitions
+	- Suspense
+
+
+* FMD --> https://www.youtube.com/watch?v=j3CKzC8Df9M
+----------------------------------------------------------------------------------------------------------------
+********************************* Steps to configure ESLint with React *****************************************
+* Install 'ESLint' extension on VSCode editor first.
+* Run this command from root directory of the project --> npm install eslint --save-dev
+* Then Run --> npx eslint --init
+* .eslintrc.json will be created, change the rules as per project needs.
+* Add below 2 lines in "scripts" object inside of package.json file
+
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+
+* Run 'npm run lint' command to see all the linting issues.
+* Run 'npm run lint:fix' command to fix all the possible linting issues.
+
+* In VSCode settings, turn on Format 'onSave' and 'onPaste' checkboxes for sure
+
+FMD --> https://programmingwithmosh.com/javascript/setup-eslint-and-prettier-in-your-react-project/
+****************************************************************************************************************
+* React Best Practices: ----------------------------------------------------------------------------------------
+* It's all about React Best Practices
+
+
+* FMD --> https://www.youtube.com/watch?v=R_PaqzE7eaA
+https://www.youtube.com/watch?v=wi8RwDOCxhQ
+
+* How to Use React Developer Tools? --> https://www.youtube.com/watch?v=hfhhicy_QAc
+
+
+
+
+
+
+
+
+
+
+
+
+* Understanding React Portals | Portals - React --> https://www.youtube.com/watch?v=OVBNPK1t19g
+* Learn React Portal In 12 Minutes By Building A Modal --> https://www.youtube.com/watch?v=LyLa7dU5tp8
+----------------------------------------------------------------------------------------------------------------
+------------------------------------ Best Guides for React concepts --------------------------------------------
+* https://www.youtube.com/c/Codevolution/playlists
+*** https://www.youtube.com/watch?v=CKAn5dCK6RE
+* https://www.youtube.com/c/VetrivelRavi/videos
+* Where & How to Use React Helmet | Manage document.head dynamically --> https://www.youtube.com/watch?v=92UDOLRydbw
+* Difference Between Transpiler & Polyfills | Babeljs | core-js | Javascript --> https://www.youtube.com/watch?v=BOT9J6GJS2E
